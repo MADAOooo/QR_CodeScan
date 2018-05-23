@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_fdfq"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.qr_codescan.Fdfq"
+    android:background="#ffe1e0de"
+    >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="15dip"
+        android:gravity="center_horizontal"
+        android:text="负极箔/电解纸分切"
+        android:textColor="@android:color/black"
+        android:textSize="35sp" />
+
+    <EditText
+        android:id="@+id/scan_editText"
+        android:layout_width="350sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="10dp"
+        android:textSize="25sp"
+        android:layout_marginTop="15dip"
+        />
+    <Button
+        android:id="@+id/scan"
+        android:layout_width="150sp"
+        android:layout_height="60sp"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/scan_editText"
+        android:text="扫描"
+        android:textSize="28sp"
+        android:layout_marginTop="15dip"
+        />
+    <TextView
+        android:id="@+id/ph"
+        android:layout_width="170sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/scan"
+        android:layout_marginLeft="10dp"
+        android:text="批号："
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        />
+    <EditText
+        android:id="@+id/ph1"
+        android:layout_width="350sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/ph"
+        android:layout_below="@+id/scan"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/xh"
+        android:layout_width="170sp"
+        android:layout_height="46sp"
+        android:text="箱号："
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_below="@+id/ph"
+        android:layout_alignStart="@+id/ph" />
+
+    <EditText
+        android:id="@+id/xh1"
+        android:layout_width="350sp"
+        android:layout_height="46sp"
+        android:textSize="25sp"
+        android:layout_below="@+id/ph"
+        android:layout_toRightOf="@+id/xh"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/gg"
+        android:layout_width="170sp"
+        android:layout_height="46sp"
+        android:text="规格："
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:layout_below="@+id/xh"
+        android:layout_alignStart="@+id/xh" />
+    <EditText
+        android:id="@+id/gg1"
+        android:layout_width="250sp"
+        android:layout_height="46sp"
+        android:textSize="25sp"
+        android:layout_below="@+id/xh"
+        android:layout_toEndOf="@+id/yxkd" />
+
+    <Button
+        android:id="@+id/clear1"
+        android:layout_width="120sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/xh"
+        android:layout_toRightOf="@+id/gg1"
+        android:textSize="20sp"
+        android:text="清空扫描" />
+
+
+
+    <TextView
+        android:id="@+id/yxkd"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/gg"
+        android:text="有效宽度："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/yxkd1"
+        android:layout_width="100sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/yxkd"
+        android:layout_below="@+id/gg"
+        android:inputType="number"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/sl"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/gg"
+        android:layout_toRightOf="@+id/yxkd1"
+        android:text="数量："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/sl1"
+        android:layout_width="100sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/sl"
+        android:layout_below="@+id/gg"
+        android:inputType="numberDecimal"
+        android:textSize="25sp" />
+
+
+    <TextView
+        android:id="@+id/srkd"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/yxkd"
+        android:text="输入宽度："
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+         />
+    <EditText
+        android:id="@+id/srkd1"
+        android:layout_width="100sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/srkd"
+        android:layout_below="@+id/yxkd"
+        android:inputType="numberDecimal"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/srbs"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/yxkd"
+        android:layout_toRightOf="@+id/srkd1"
+        android:text="输入并数："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/srbs1"
+        android:layout_width="100sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/srbs"
+        android:layout_below="@+id/yxkd"
+        android:inputType="numberDecimal"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/dq1"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/srkd"
+        android:text="带切宽度1："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/dq11"
+        android:layout_width="100sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/dq1"
+        android:layout_below="@+id/srkd"
+        android:inputType="numberDecimal"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/dqb1"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/srkd"
+        android:layout_toRightOf="@+id/dq11"
+        android:text="带切并数1："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/dqb11"
+        android:layout_width="100sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/dqb1"
+        android:layout_below="@+id/srkd"
+        android:inputType="numberDecimal"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/dq2"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/dq1"
+        android:text="带切宽度2："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/dq21"
+        android:layout_width="100sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/dq2"
+        android:layout_below="@+id/dq1"
+        android:inputType="numberDecimal"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/dqb2"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/dq1"
+        android:layout_toRightOf="@+id/dq21"
+        android:text="带切并数2："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/dqb21"
+        android:layout_width="100sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/dqb2"
+        android:layout_below="@+id/dq1"
+        android:inputType="numberDecimal"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/sqzkd"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/dq2"
+        android:text="实切总宽度："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/sqzkd1"
+        android:layout_width="250sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/sqzkd"
+        android:layout_below="@+id/dq2"
+        android:inputType="numberDecimal"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cqr"
+        android:layout_width="180sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/sqzkd"
+        android:text="裁切人："
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+    <EditText
+        android:id="@+id/cqr1"
+        android:layout_width="200sp"
+        android:layout_height="46sp"
+        android:layout_toRightOf="@+id/cqr"
+        android:layout_below="@+id/sqzkd"
+        android:inputType="numberDecimal"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/jisuan"
+        android:layout_width="120sp"
+        android:layout_height="46sp"
+        android:layout_below="@+id/dq2"
+        android:layout_toRightOf="@+id/sqzkd1"
+        android:textSize="20sp"
+        android:text="计算" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/cqr1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:text="提交"
+        android:textSize="32sp" />
+
+    <Button
+        android:id="@+id/clear2"
+        android:layout_width="200sp"
+        android:layout_height="80sp"
+        android:layout_below="@+id/cqr1"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/send"
+        android:layout_marginTop="150dp"
+        android:text="清空输入"
+        android:textSize="32sp" />
+
+
+
+
+</RelativeLayout>

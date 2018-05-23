@@ -1,0 +1,148 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+     >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:background="#1296DB">
+
+          <Button
+              android:id="@+id/button_back"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="返回"
+              android:background="@drawable/mm_title_back_btn"
+              android:textColor="@android:color/white"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="2dp" />
+
+
+          <TextView
+              android:id="@+id/title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="19dp"
+              android:layout_centerHorizontal="true"
+              android:gravity="center_vertical"
+              android:text="工序汇报查询"
+              android:textColor="@android:color/white"
+              android:textSize="28sp" />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerInParent="true">
+
+          <Button
+              android:id="@+id/button_scan"
+              android:layout_width="150sp"
+              android:layout_height="60sp"
+              android:text="扫描"
+              android:textSize="28sp"
+              android:background="@drawable/btn_style"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="110dp"
+              android:textColor="@android:color/white" />
+
+
+          <TextView
+              android:id="@+id/ph"
+              android:layout_width="200sp"
+              android:layout_height="50sp"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="40dp"
+              android:layout_below="@+id/button_scan"
+              android:text="批号或职员："
+              android:textColor="@android:color/black"
+              android:textSize="30sp" />
+          <EditText
+              android:id="@+id/edit_ph"
+              android:layout_width="150sp"
+              android:layout_height="50sp"
+              android:layout_toRightOf="@+id/ph"
+              android:layout_below="@+id/button_scan"
+              android:layout_marginTop="40dp"
+              android:background="@drawable/edit_style"
+              android:textSize="28sp"
+              android:padding="10dp"/>
+
+
+
+
+          <Spinner
+              android:id="@+id/spinner3"
+              android:layout_width="250sp"
+              android:layout_height="60sp"
+              android:layout_below="@+id/ph"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="20dp"
+              android:textSize="30sp" />
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:layout_marginTop="380dp">
+
+
+
+
+              <HorizontalScrollView
+                  android:layout_width="match_parent"
+                  android:layout_height="800dp"
+                  android:overScrollMode="never"
+                  android:scrollbars="none">
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical">
+
+
+                      <LinearLayout
+                          android:id="@+id/l1"
+                          android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:orientation="vertical"
+                          android:layout_marginLeft="80dp">
+
+                          <include
+                              layout="@layout/list_item"
+                              android:id="@+id/list_title2" />
+
+
+
+
+                          <ListView
+                              android:id="@+id/list_view"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:scrollbars="horizontal|vertical" />
+
+
+                      </LinearLayout>
+
+
+                  </LinearLayout>
+              </HorizontalScrollView>
+          </LinearLayout>
+      </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+  </ScrollView>

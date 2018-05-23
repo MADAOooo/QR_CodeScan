@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#93CAE5"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+
+        <TextView
+            android:id="@+id/text_id"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="序号"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+
+        <TextView
+            android:id="@+id/text_ph"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="批号"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+
+        <TextView
+            android:id="@+id/text_cpmc"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="产品名称"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="汇报时间"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_width="1.5dp"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+
+        <TextView
+            android:id="@+id/text_jth"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="机台信息"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+
+        <TextView
+            android:id="@+id/text_czy"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="操作工"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+
+        <TextView
+            android:id="@+id/text_lpsl"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="良品数量"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+
+        <TextView
+            android:id="@+id/text_blpsl"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="不良品数"
+            android:textSize="22sp"
+            android:padding="15dp"
+            android:maxLines="1"/>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="#93CAE5"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dip"
+        android:background="#93CAE5"/>
+
+
+</LinearLayout>

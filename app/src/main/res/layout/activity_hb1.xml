@@ -1,0 +1,398 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+  >
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="70dp"
+          android:background="#1296DB">
+
+          <Button
+              android:id="@+id/button_back"
+              android:layout_width="75dp"
+              android:layout_height="wrap_content"
+              android:text="返回"
+              android:background="@drawable/mm_title_back_btn"
+              android:textColor="@android:color/white"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="2dp" />
+
+
+          <TextView
+              android:id="@+id/title"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="9dp"
+              android:layout_centerHorizontal="true"
+              android:gravity="center_vertical"
+              android:text="工序汇报"
+              android:textColor="@android:color/white"
+              android:textSize="28sp" />
+      </RelativeLayout>
+
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true">
+
+          <Button
+              android:id="@+id/button_scan"
+              android:layout_width="120dp"
+              android:layout_height="60dp"
+              android:text="扫描"
+              android:layout_centerHorizontal="true"
+              android:background="@drawable/btn_style"
+              android:textSize="35sp"
+              android:layout_marginTop="85dp"
+              android:textColor="@android:color/white"/>
+
+          <TextView
+              android:id="@+id/kahao"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/button_scan"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="23dp"
+              android:layout_alignParentLeft="true"
+              android:text="产品批号："
+              android:textColor="@android:color/black"
+              android:textSize="30sp" />
+          <EditText
+              android:id="@+id/edit_kahao"
+              android:layout_width="350sp"
+              android:layout_height="40sp"
+              android:layout_marginTop="23dp"
+              android:layout_toRightOf="@+id/kahao"
+              android:layout_below="@+id/button_scan"
+              android:textSize="28sp"
+              android:background="@drawable/edit_style"
+              android:layout_above="@+id/jth"
+              android:padding="10dp" />
+
+          <TextView
+              android:id="@+id/jth"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/kahao"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:layout_alignParentLeft="true"
+              android:text="设备编号："
+              android:textColor="@android:color/black"
+              android:textSize="30sp" />
+
+          <EditText
+              android:id="@+id/edit_jth"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/kahao"
+              android:layout_toRightOf="@+id/jth"
+              android:textSize="28sp"
+              android:layout_marginTop="8dp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp" />
+
+          <TextView
+              android:id="@+id/czy"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:text="操作员号："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:layout_below="@+id/jth"
+              android:layout_alignStart="@+id/jth"
+              android:layout_alignParentLeft="true" />
+
+          <EditText
+              android:id="@+id/edit_czy"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_marginTop="8dp"
+              android:layout_below="@+id/jth"
+              android:layout_toRightOf="@+id/czy"
+              android:textSize="28sp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp" />
+
+          <TextView
+              android:id="@+id/gxmc"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:text="工序名称："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:layout_below="@+id/czy"
+              android:layout_alignStart="@+id/jth"
+              android:layout_alignParentLeft="true" />
+
+          <EditText
+              android:id="@+id/edit_gxmc"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_marginTop="8dp"
+              android:layout_below="@+id/czy"
+              android:layout_toRightOf="@+id/gxmc"
+              android:textSize="28sp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp" />
+
+          <ImageView
+              android:id="@+id/qrcode_bitmap2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:visibility="invisible" />
+
+          <TextView
+              android:id="@+id/bz"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/edit_gxmc"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:text="作业班组："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_alignParentLeft="true" />
+          <Spinner
+              android:id="@+id/spinner_bz"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/edit_gxmc"
+              android:layout_toRightOf="@+id/bz"
+              android:textSize="30sp"
+              android:layout_marginTop="8dp" />
+
+          <TextView
+              android:id="@+id/style"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:text="生产类型："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_below="@+id/spinner_bz"
+              android:layout_toStartOf="@+id/spinner_bz"
+              android:layout_alignParentLeft="true" />
+
+          <Spinner
+              android:id="@+id/spinner_style"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_marginTop="8dp"
+              android:layout_below="@+id/spinner_bz"
+              android:layout_toRightOf="@+id/style"
+              android:textSize="30sp" />
+          <TextView
+              android:id="@+id/time"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/spinner_style"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:text="作业时间："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_alignParentLeft="true" />
+          <DatePicker
+              android:id="@+id/datePicker"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/spinner_style"
+              android:layout_toRightOf="@+id/time"
+              android:layout_marginTop="8dp"
+              android:layout_marginLeft="5dp"
+              android:theme="@android:style/Theme.NoTitleBar"
+              />
+          <TextView
+              android:id="@+id/jhsl"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/datePicker"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:text="计划数量："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_alignParentLeft="true" />
+
+          <EditText
+              android:id="@+id/edit_jhsl"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_marginTop="8dp"
+              android:layout_below="@+id/datePicker"
+              android:layout_toRightOf="@+id/jhsl"
+              android:inputType="number"
+              android:textSize="28sp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp" />
+
+          <TextView
+              android:id="@+id/lpsl"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/jhsl"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:text="良品数量："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_alignParentLeft="true" />
+
+          <EditText
+              android:id="@+id/edit_lpsl"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/jhsl"
+              android:layout_toRightOf="@+id/lpsl"
+              android:inputType="number"
+              android:textSize="28sp"
+              android:layout_marginTop="8dp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp" />
+
+
+          <TextView
+              android:id="@+id/blpsl"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/lpsl"
+              android:layout_marginLeft="50dp"
+              android:layout_marginTop="8dp"
+              android:text="不良品数："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_alignParentLeft="true" />
+
+          <EditText
+              android:id="@+id/edit_blpsl"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/lpsl"
+              android:layout_toRightOf="@+id/blpsl"
+              android:inputType="number"
+              android:textSize="28sp"
+              android:layout_marginTop="8dp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp" />
+
+
+
+          <TextView
+              android:id="@+id/cpmc"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/blpsl"
+              android:layout_marginLeft="50dp"
+              android:text="产品名称："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_marginTop="8dp"
+              android:layout_alignParentLeft="true" />
+
+          <EditText
+              android:id="@+id/edit_cpmc"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/blpsl"
+              android:layout_toRightOf="@+id/cpmc"
+              android:textSize="28sp"
+              android:layout_marginTop="8dp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp" />
+
+          <TextView
+              android:id="@+id/ggxh"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/cpmc"
+              android:layout_marginLeft="50dp"
+              android:text="规格型号："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_marginTop="8dp"
+              android:layout_alignParentLeft="true" />
+
+          <EditText
+              android:id="@+id/edit_ggxh"
+              android:layout_width="350sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/cpmc"
+              android:layout_toRightOf="@+id/ggxh"
+              android:textSize="28sp"
+              android:layout_marginTop="8dp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp" />
+
+
+          <TextView
+              android:id="@+id/note"
+              android:layout_width="170sp"
+              android:layout_height="50sp"
+              android:layout_below="@+id/ggxh"
+              android:layout_marginLeft="50dp"
+              android:text="备注："
+              android:textColor="@android:color/black"
+              android:textSize="30sp"
+              android:layout_marginTop="30dp"
+              android:layout_alignParentLeft="true" />
+
+          <EditText
+              android:id="@+id/edit_note"
+              android:layout_width="350sp"
+              android:layout_height="100sp"
+              android:layout_below="@+id/ggxh"
+              android:layout_toRightOf="@+id/note"
+              android:textSize="28sp"
+              android:layout_marginTop="30dp"
+              android:background="@drawable/edit_style"
+              android:padding="10dp"/>
+
+          <Button
+              android:id="@+id/send"
+              android:background="@drawable/btn_style"
+              android:layout_width="120dp"
+              android:layout_height="70dp"
+              android:layout_marginLeft="80dp"
+              android:layout_toRightOf="@+id/clearall"
+              android:layout_below="@+id/edit_note"
+              android:text="提交"
+              android:textSize="30sp"
+              android:textColor="@android:color/white"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="20dp" />
+
+
+          <Button
+              android:id="@+id/clearall"
+              android:background="@drawable/btn_style"
+              android:layout_width="120dp"
+              android:layout_height="70dp"
+              android:layout_below="@+id/edit_note"
+              android:layout_marginLeft="180dp"
+              android:text="清空"
+              android:textSize="30sp"
+              android:textColor="@android:color/white"
+              android:layout_marginTop="20dp"
+              android:layout_marginBottom="20dp" />
+      </RelativeLayout>
+
+
+
+
+
+  </RelativeLayout>
+
+</ScrollView>

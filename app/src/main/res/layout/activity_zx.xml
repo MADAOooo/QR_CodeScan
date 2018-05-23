@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#1296DB">
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:text="返回"
+                android:background="@drawable/mm_title_back_btn"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="2dp" />
+
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="装箱"
+                android:textColor="@android:color/white"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/scan"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="扫描"
+            android:textSize="30sp"
+            android:background="@drawable/btn_style"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="70dp"/>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/scan"
+            android:background="@drawable/btn_style"
+            android:text="提交"
+            android:textSize="30sp"
+            android:layout_marginTop="70dp"/>
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/send"
+            android:background="@drawable/btn_style"
+            android:text="清空"
+            android:textSize="30sp"
+            android:layout_marginTop="70dp"/>
+
+        <TextView
+            android:id="@+id/wx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="140dp"
+            android:text="外箱："
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/wxtm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/wx"
+            android:text="外箱条码："
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/edit_wxtm"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/wxtm"
+            android:layout_below="@+id/wx"
+            android:textSize="25sp"
+            android:background="@drawable/edit_style"/>
+
+        <TextView
+            android:id="@+id/ph"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/wxtm"
+            android:text="批号："
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/edit_ph"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/ph"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/edit_wxtm"
+            android:layout_alignLeft="@+id/edit_wxtm"
+            android:textSize="25sp"
+            android:background="@drawable/edit_style" />
+
+        <TextView
+            android:id="@+id/ggxh"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ph"
+            android:text="规格型号："
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/edit_ggxh"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/ggxh"
+            android:layout_below="@+id/edit_ph"
+            android:layout_alignLeft="@+id/edit_wxtm"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:background="@drawable/edit_style" />
+
+        <TextView
+            android:id="@+id/xztj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/ggxh"
+            android:text="限制条件："
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/wldm"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/xztj"
+            android:text="物料代码："
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/edit_wldm"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/wldm"
+            android:layout_alignLeft="@+id/edit_wxtm"
+            android:layout_below="@+id/xztj"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:background="@drawable/edit_style" />
+
+        <TextView
+            android:id="@+id/wxsl"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/wldm"
+            android:text="外箱数量："
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/edit_wxsl"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/wxsl"
+            android:layout_below="@+id/edit_wldm"
+            android:layout_alignLeft="@+id/edit_wxtm"
+            android:layout_marginTop="5dp"
+            android:textSize="25sp"
+            android:background="@drawable/edit_style" />
+
+        <TextView
+            android:id="@+id/nx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/wxsl"
+            android:text="内箱："
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/sjsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/nx"
+            android:text="已扫描数量："
+            android:textColor="@android:color/black"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/edit_sjsl"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_toRightOf="@+id/sjsl"
+            android:layout_below="@+id/nx"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:background="@drawable/edit_style" />
+    </RelativeLayout>
+</ScrollView>

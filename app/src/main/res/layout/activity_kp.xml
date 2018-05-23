@@ -1,0 +1,470 @@
+<ScrollView   
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+ 
+  android:layout_width="fill_parent"  
+  android:layout_height="fill_parent"  
+  android:background="#ffe1e0de"
+  >
+
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical" >
+
+      <TextView
+          android:id="@+id/title"
+          android:layout_width="fill_parent"
+          android:layout_height="40sp"
+          android:layout_marginTop="15dip"
+          android:gravity="center_horizontal"
+          android:text="开片"
+          android:textColor="@android:color/black"
+          android:textSize="35sp" />
+
+      <Button
+          android:id="@+id/scan"
+          android:layout_width="150sp"
+          android:layout_height="70sp"
+          android:layout_below="@+id/title"
+          android:text="扫  描"
+          android:textSize="30sp" 
+          android:layout_marginLeft="60dp"   />
+
+      <Button
+          android:id="@+id/send"
+          android:layout_width="150sp"
+          android:layout_height="70sp"
+          android:layout_below="@+id/title"
+          android:layout_marginLeft="30dp"     
+           android:layout_toRightOf="@+id/scan"
+          android:text="提  交"
+          android:textSize="30sp" />   
+     <Button
+          android:id="@+id/clear"
+          android:layout_width="150sp"
+          android:layout_height="70sp"
+          android:layout_below="@+id/title"
+          android:layout_marginLeft="30dp"     
+           android:layout_toRightOf="@+id/send"
+          android:text="清空表头"
+          android:textSize="30sp" />   
+         <TextView
+          android:id="@+id/th"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/send"
+          android:layout_marginLeft="20dp"
+          android:text="图号："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText1"
+          android:layout_width="350sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/th"
+          android:layout_below="@+id/send"
+          android:textSize="25sp" />
+     
+       <TextView
+          android:id="@+id/sc"
+          android:layout_width="230sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/th"
+          android:layout_marginLeft="20dp"
+          android:text="生产任务单号："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText2"
+          android:layout_width="290sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/sc"
+          android:layout_below="@+id/th"
+          android:textSize="25sp" />
+       
+        <TextView
+          android:id="@+id/mc"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/sc"
+          android:layout_marginLeft="20dp"
+          android:text="产品名称："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText4"
+          android:layout_width="350sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/mc"
+          android:layout_below="@+id/sc"
+          android:textSize="25sp" />
+      <TextView
+          android:id="@+id/gg"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/mc"
+          android:layout_marginLeft="20dp"
+          android:text="规格型号："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText5"
+          android:layout_width="350sp"
+          android:layout_height="80sp"
+         android:layout_toRightOf="@+id/gg"
+          android:layout_below="@+id/mc"
+          android:textSize="25sp" />
+      <TextView
+          android:id="@+id/cs"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/editText5"
+          android:layout_marginLeft="20dp"
+          android:text="目标容量："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText6"
+          android:layout_width="130sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/cs"
+          android:layout_below="@+id/editText5"
+          android:textSize="25sp" />
+            <TextView
+          android:id="@+id/k"
+          android:layout_width="180sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/editText5"
+          android:layout_toRightOf="@+id/editText6"
+          android:layout_marginLeft="10dp"
+          android:text="裁切系数K："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+       <TextView
+          android:id="@+id/inph"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/editText7"
+          android:layout_marginLeft="20dp"
+          android:text="输入批号："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText17"
+          android:layout_width="140sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/inph"
+          android:layout_below="@+id/editText7"
+          android:textSize="25sp" />
+         <TextView
+          android:id="@+id/kh"
+          android:layout_width="90sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/editText6"
+          android:layout_toRightOf="@+id/editText17"
+          android:layout_marginLeft="10dp"
+          android:text="客户："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editTextkh"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/kh"
+          android:layout_below="@+id/editText6"
+          android:textSize="23sp" />
+        <TextView
+          android:id="@+id/kahao"
+          android:layout_width="230sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/inph"
+          android:layout_marginLeft="20dp"
+          android:text="铝箔手工批号："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText3"
+          android:layout_width="290sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/kahao"
+          android:layout_below="@+id/inph"
+          android:textSize="25sp" />
+        <TextView
+          android:id="@+id/lbph"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/kahao"
+          android:layout_marginLeft="20dp"
+          android:text="铝箔牌号："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText8"
+          android:layout_width="350sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/lbph"
+          android:layout_below="@+id/kahao"
+          android:textSize="25sp" />
+      <TextView
+          android:id="@+id/zxbr"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/lbph"
+          android:layout_marginLeft="20dp"
+          android:text="最小比容："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" 
+          />
+      <EditText
+          android:id="@+id/editText9"
+          android:layout_width="100sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/zxbr"
+          android:layout_below="@+id/lbph"
+          android:textSize="25sp" />
+       <TextView
+          android:id="@+id/lbcd"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/lbph"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/editText9"
+          android:text="铝箔长度："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText10"
+          android:layout_width="120sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/lbcd"
+          android:layout_below="@+id/lbph"
+          android:textSize="25sp" />
+      
+      <TextView
+          android:id="@+id/bs"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/lbcd"
+          android:layout_marginLeft="20dp"
+          android:text="输入并数："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText13"
+          android:layout_width="100sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/bs"
+          android:layout_below="@+id/lbcd"
+           android:inputType="numberDecimal"
+          android:textSize="25sp" />
+       <TextView
+          android:id="@+id/width"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/lbcd"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/editText13"
+          android:text="输入宽度："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText14"
+          android:layout_width="120sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/width"
+          android:layout_below="@+id/lbcd"
+           android:inputType="numberDecimal"
+          android:textSize="25sp" />
+        <TextView
+          android:id="@+id/l"
+          android:layout_width="170sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/width"
+          android:layout_marginLeft="20dp"
+          android:text="计算L："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText15"
+          android:layout_width="250sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/l"
+          android:layout_below="@+id/width"
+          android:textSize="25sp" />
+       <TextView
+          android:id="@+id/s"
+          android:layout_width="190sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/l"
+          android:layout_marginLeft="20dp"
+          android:text="计算总面积："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText18"
+          android:layout_width="250sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/s"
+          android:layout_below="@+id/l"
+          android:textSize="25sp" />
+       <TextView
+          android:id="@+id/qua"
+          android:layout_width="190sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/s"
+          android:layout_marginLeft="20dp"
+          android:text="计算总数量："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText16"
+          android:layout_width="250sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/qua"
+          android:layout_below="@+id/s"
+          android:textSize="25sp" />
+   <TextView
+          android:id="@+id/dq1"
+          android:layout_width="180sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/qua"
+          android:layout_marginLeft="20dp"
+          android:text="带切宽度1："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText19"
+          android:layout_width="100sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/dq1"
+          android:layout_below="@+id/qua"
+           android:inputType="numberDecimal"
+          android:textSize="25sp" />
+        <TextView
+          android:id="@+id/dqb1"
+          android:layout_width="180sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/qua"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/editText19"
+          android:text="带切并数1："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText20"
+          android:layout_width="100sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/dqb1"
+          android:layout_below="@+id/qua"
+           android:inputType="numberDecimal"
+          android:textSize="25sp" />
+    <TextView
+          android:id="@+id/dq2"
+          android:layout_width="180sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/dq1"
+          android:layout_marginLeft="20dp"
+          android:text="带切宽度2："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText21"
+          android:layout_width="100sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/dq2"
+          android:layout_below="@+id/dq1"
+           android:inputType="numberDecimal"
+          android:textSize="25sp" /> 
+           <TextView
+          android:id="@+id/dqb2"
+          android:layout_width="180sp"
+          android:layout_height="46sp"
+          android:layout_below="@+id/dq1"
+          android:layout_marginLeft="10dp"
+          android:layout_toRightOf="@+id/editText21"
+          android:text="带切并数2："
+          android:textColor="@android:color/black"
+          android:textSize="30sp" />
+      <EditText
+          android:id="@+id/editText22"
+          android:layout_width="100sp"
+          android:layout_height="46sp"
+         android:layout_toRightOf="@+id/dqb2"
+          android:layout_below="@+id/dq1"
+           android:inputType="numberDecimal"
+          android:textSize="25sp" />  
+  <TextView
+          android:id="@+id/textView2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+          android:layout_below="@+id/dq2"
+          android:layout_marginTop="10dp"
+          android:text="铝箔牌号     手工批号     最小比容     铝箔长度     并数      宽度      L  总面积    总数量     带切宽度1  带切并数1  带切宽度2  带切并数2" 
+          android:textSize="18sp"
+          android:textColor="@android:color/black"
+          />
+      <TextView
+          android:id="@+id/textView1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+          android:layout_below="@+id/textView2"         
+          android:text="" 
+          android:textSize="20sp"
+          android:textColor="@android:color/black"
+          />
+
+      <Button
+          android:id="@+id/jisuan"
+          android:layout_width="60sp"
+          android:layout_height="70sp"
+          android:layout_below="@+id/editText14"  
+         android:layout_toRightOf="@+id/editText18"
+         android:textSize="20sp"
+          android:text="计算" />
+    <Button
+          android:id="@+id/shanchu"
+          android:layout_width="60sp"
+          android:layout_height="70sp"
+          android:layout_below="@+id/tianjia"  
+         android:layout_toRightOf="@+id/editText18"
+         android:textSize="20sp"
+          android:text="清空" />
+
+    <Button
+        android:id="@+id/tianjia"
+        android:layout_width="60sp"
+        android:layout_height="70sp"
+        android:layout_alignBaseline="@+id/jisuan"
+        android:layout_alignBottom="@+id/jisuan"
+        android:layout_toRightOf="@+id/jisuan"
+        android:text="添加"
+        android:textSize="20sp" />
+ <Button
+          android:id="@+id/chaxun"
+          android:layout_width="60sp"
+          android:layout_height="70sp"
+          android:layout_below="@+id/tianjia"  
+         android:layout_toRightOf="@+id/shanchu"
+         android:textSize="20sp"
+          android:text="查询" />
+
+ <EditText
+     android:id="@+id/editText7"
+     android:layout_width="90sp"
+     android:layout_height="46sp"
+     android:layout_above="@+id/editTextkh"
+     android:layout_alignParentRight="true"
+     android:ems="10"
+     android:textSize="25sp" >
+
+     <requestFocus />
+ </EditText>
+
+</RelativeLayout>
+
+</ScrollView>
+
+
+      
